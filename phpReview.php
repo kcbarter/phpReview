@@ -39,11 +39,19 @@
     }
 
     addToArray($animals);
+    echo '<br>';
+    echo '<br>';
 
     //associative array
     $cupcake = array("grasshopper"=>"The Grasshopper", "maple"=>"Whiskey Maple Bacon",
         "carrot"=>"Carrot Walnut", "carmel"=>"Salted Carmel Cupcake", "valvet"=>"Red Velvet",
         "lemon"=>"Lemon Drop", "tiramisu"=> "Tiramisu");
+
+    foreach ($cupcake as $cupcake => $flavor)
+    {
+        echo '<input type="checkbox" name=".$flavor." value=".$cupcake.">';
+        echo $flavor.'<br>';
+    }
     ?>
 </body>
 </html>
