@@ -22,6 +22,28 @@
     }
 
     sortArray($animals);
+
+    //adding to the array
+    $String = " ";
+    function addToArray($animals)
+    {
+        sort($animals);
+        $goat = "goat";
+        $length2 = count($animals);
+        array_push($animals, $goat);
+        echo '<p>Adding '.$goat.'....</p>';
+        for($j = 0; $j < $length2; $j++)
+        {
+            echo $animals[$j].' ';
+        }
+    }
+
+    addToArray($animals);
+
+    //associative array
+    $cupcake = array("grasshopper"=>"The Grasshopper", "maple"=>"Whiskey Maple Bacon",
+        "carrot"=>"Carrot Walnut", "carmel"=>"Salted Carmel Cupcake", "valvet"=>"Red Velvet",
+        "lemon"=>"Lemon Drop", "tiramisu"=> "Tiramisu");
     ?>
 </body>
 </html>
